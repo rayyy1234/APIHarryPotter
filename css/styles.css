@@ -1,0 +1,136 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1d;
+    padding: 20px;
+}
+
+h1 {
+    color: #f8d210;
+}
+
+#search {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.character-card {
+    background-color: #3e363f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character-card h3 {
+    margin: 10px 0;
+    color: #f8d210;
+}
+
+.character-card {
+    background-color: #3e363f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid transparent; 
+}
+
+
+.character-card h3 {
+    font-size: 1.2em;
+}
+
+.character-card p {
+    font-size: 1em;
+}
+
+.character-card p:contains("Gryffindor") {
+    border-color: #ae0001;
+}
+
+.character-card p:contains("Slytherin") {
+    border-color: #2a623d;
+}
+
+.character-card p:contains("Ravenclaw") {
+    border-color: #222f5b;
+}
+
+.character-card p:contains("Hufflepuff") {
+    border-color: #ecb939;
+}
+
+.character-card {
+    background-color: #3e363f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    border-left: 6px solid transparent; 
+    position: relative;
+}
+
+
+.character-card::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #3e363f; 
+    transform: translateX(-50%);
+}
+
+
+.character-card h3 {
+    font-size: 1.2em;
+}
+
+
+.house-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.house-crest {
+    width: 40px;
+    height: 40px;
+}
+
